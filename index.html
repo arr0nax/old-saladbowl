@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>flock time!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/scripts.js"></script>
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+      <h1 id="its_your_turn" style="background-color:green;display:none;">ITS YOUR TURN <span id='player_name2'></span> !!!!!</h1>
+
+      <form id="start_turn_form" action="" style="display:none;">
+          <button>start your turn!</button>
+      </form>
+
+      <p id="clue"></p>
+
+      <form id="got_clue_form" action="" style="display:none;">
+          <button>got it!</button>
+      </form>
+
+      <form id="skip_clue_form" action="" style="display:none;">
+          <button>skip it!</button>
+      </form>
+
+      <h3><span id="timer"></span> seconds left!!!</h3>
+      <h3>round <span id="round"/></h3>
+
+      <h2>Team 1 score: <span id='team1score'/></h2>
+      <ul id="players1"></ul>
+      <h2>Team 2 score: <span id='team2score'/></h2>
+      <ul id="players2"></ul>
+      <form id="change_name_form" action="">
+          <input id="name" autocomplete="off" placeholder="write your name!" required/>
+          <button>Send</button>
+      </form>
+      <p id='player_name'></p>
+
+
+      <form id="add_clues_form" action="" style="display:none;">
+          <input id="clue1" autocomplete="off" placeholder="first clue" required/>
+          <input id="clue2" autocomplete="off" placeholder="second clue" required/>
+          <input id="clue3" autocomplete="off" placeholder="third clue" required/>
+          <button>save</button>
+      </form>
+
+
+      <form id="start_game_form" action="">
+          <button>start game!</button>
+      </form>
+
+      <ul id="clues"></ul>
+  </body>
+</html>
